@@ -1,7 +1,7 @@
 <template>
   <div class="home">
 <!--    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>-->
-    <h1 class="">Поезда</h1>
+    <h1 class="">Данные таблицы</h1>
 
     <input
       type="text"
