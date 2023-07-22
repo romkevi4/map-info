@@ -24,7 +24,7 @@
 
       <tbody class="bg-gray-100">
         <RowOfTable
-          :go-to="`/git${item.id}`"
+          :go-to="`/${item.id}`"
           v-for="item in store.initialData"
           v-bind:key="item.id"
           v-bind:id="item.id"
