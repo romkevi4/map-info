@@ -1,8 +1,8 @@
 /* Style normalizer */
-@import url(./normalize/normalize.css);
+@import './normalize/normalize.css';
 
 /* Fonts */
-@import url(./fonts/font.css);
+@import './fonts/font.css';
 
 /* tailwindcss */
 @tailwind base;
