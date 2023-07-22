@@ -8,6 +8,6 @@ export const useGlobalStore = defineStore('store', {
   actions: {
     setInitialData(data: Iitems[]) {
       this.initialData = data
-    }
+    },
   },
 })
