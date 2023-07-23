@@ -1,12 +1,12 @@
 interface Iitems {
-  id: String,
-  name: String,
+  id: string,
+  name: string,
   geometry: {
-    type: String,
+    type: string,
     properties: {},
     geometry: {
-      type: String,
-      coordinates: Number[]
+      type: string,
+      coordinates: Array<number>
     }
   }
 }

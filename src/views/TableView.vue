@@ -12,6 +12,7 @@
         disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none
         invalid:border-slate-500 focus:invalid:border-pink-500 focus:invalid:ring-pink-500 font-custom
       "
+      @input="handleInput"
     >
 
     <table class="w-full">
@@ -25,7 +26,7 @@
       <tbody class="bg-gray-100">
         <RowOfTable
           :go-to="`/${item.id}`"
-          v-for="item in store.initialData"
+          v-for="item in store.filteredData"
           v-bind:key="item.id"
           v-bind:id="item.id"
           v-bind:name="item.name"
@@ -41,6 +42,11 @@
   import RowOfTable from '@/components/RowOfTable.vue'
 
   const store = useGlobalStore()
+
+  const handleInput = (evt: InputEvent) => {
+    const target = evt.target as HTMLInputElement | null
+    target && store.setFilteredData(target.value)
+  }
 </script>
 
 <style></style>

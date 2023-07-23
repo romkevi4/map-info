@@ -21,6 +21,7 @@
     try {
       const response = await axios.get('http://localhost:3000/data')
       store.setInitialData(response.data)
+      store.filteredData = store.initialData
     } catch (err) {
       console.error('Ошибка при получении данных: ', err)
     }
