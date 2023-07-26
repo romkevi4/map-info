@@ -2,9 +2,17 @@
 
 ## Project setup
 ```
+npm git clone git@github.com:romkevi4/map-info.git
+```
+
+```
 npm install
 ```
 
+### Start a dummy json-server
+```
+json-server --watch db.json
+```
 ### Compiles and hot-reloads for development
 ```
 npm run serve
@@ -14,11 +22,3 @@ npm run serve
 ```
 npm run build
 ```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
