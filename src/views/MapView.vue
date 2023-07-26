@@ -33,22 +33,18 @@
     // console.log(currentId)
 
     if (item) {
-      // Центрирование карты на геометрии записи
       const coords: Coordinate[] = [item.geometry.geometry.coordinates]
       console.log(coords)
       const center: Coordinate = [coords[0][0]]
       console.log(center)
       const centerLonLat = fromLonLat(center)
 
-      // Создание карты
       const map = new Map({
         target: 'map',
         layers: [
-          // Базовый слой OpenStreetMap
           new TileLayer({
             source: new OSM(),
           }),
-          // Слой с геометрией записи
           new Vector({
             source: new VectorSource({
               features: [new Feature(new Polygon(coords[0]))],
